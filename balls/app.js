@@ -2,11 +2,15 @@
  * Module dependencies.
  */
 
+global.colors = require('colors');
 var express = require('express')
     , routes = require('./routes')
     , http = require('http')
-    , path = require('path')
-    , mongoose = require('./db');
+    , path = require('path');
+
+
+require('./collect.js');
+//    , mongoose = require('./db');
 
 var app = express();
 // all environments
